@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # claude-code-statusline · 01 Pills
-# Solid color badges, one hue per metric — works in ANY terminal.
+# Solid color badges, one hue per metric. Works in ANY terminal.
 # https://github.com/shyam-pareek/claude-code-statusline
 #
 # Reads Claude Code status JSON on stdin and prints one status line.

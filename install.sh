@@ -22,12 +22,12 @@ die(){ printf '%s%s%s\n' "$c_red" "$*" "$c_rst" >&2; exit 1; }
 
 # themes: "num|file|title|description"
 THEMES="
-1|01-pills|Pills|Solid rounded pills, white text — clean and readable
+1|01-pills|Pills|Solid rounded pills, white text; clean and readable
 2|02-powerline-pills|Powerline pills|Seamless arrow-joined pills (needs a Nerd Font)
 3|03-vivid-labels|Vivid labels|Bright labels; numbers shade green→amber→red by usage
 4|04-emoji-neon|Emoji neon|Emoji markers + bold neon percentages
 5|05-neon-separators|Neon separators|Diamond-separated fields, bright accents
-6|06-two-tone-pills|Two-tone pills|Bright pills with dark text — the loudest set
+6|06-two-tone-pills|Two-tone pills|Bright pills with dark text; the loudest set
 7|07-gradient-sweep|Gradient sweep|Hue glides pink→purple→blue→green
 "
 
@@ -39,7 +39,7 @@ command -v jq >/dev/null 2>&1 || die "jq is required (both installer and themes 
   Fedora: sudo dnf install -y jq"
 
 say ""
-say "${c_bold}${c_cyn}  claude-code-statusline${c_rst}${c_dim} — colorful status lines for Claude Code${c_rst}"
+say "${c_bold}${c_cyn}  claude-code-statusline${c_rst}${c_dim}  ·  colorful status lines for Claude Code${c_rst}"
 say ""
 
 # ---- choose theme ----
@@ -88,7 +88,7 @@ chmod +x "$DEST"
 CMD="bash ${DEST}"
 tmp=$(mktemp)
 if [ -f "$SETTINGS" ]; then
-  jq -e . "$SETTINGS" >/dev/null 2>&1 || die "$SETTINGS is not valid JSON — fix or move it, then re-run."
+  jq -e . "$SETTINGS" >/dev/null 2>&1 || die "$SETTINGS is not valid JSON. Fix or move it, then re-run."
   bak="${SETTINGS}.bak-$(date +%Y%m%d%H%M%S)"
   cp "$SETTINGS" "$bak"
   jq --arg cmd "$CMD" '.statusLine = {type:"command", command:$cmd}' "$SETTINGS" > "$tmp" && mv "$tmp" "$SETTINGS"

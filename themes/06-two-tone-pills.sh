@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # claude-code-statusline · 06 Two-tone pills
-# Bright backgrounds with dark text — maximum presence, the loudest set.
+# Bright backgrounds with dark text. The loudest, highest-presence set.
 # Works in ANY terminal.
 # https://github.com/shyam-pareek/claude-code-statusline
 #
