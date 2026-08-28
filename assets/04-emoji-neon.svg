@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="542" height="110" viewBox="0 0 542 110" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,monospace" font-size="15">
+<rect x="0.5" y="0.5" width="541" height="109" rx="10" fill="#1e1e2e" stroke="#313244"/>
+<path d="M0.5 38 V10.5 Q0.5 0.5 10.5 0.5 H531.5 Q541.5 0.5 541.5 10.5 V38 Z" fill="#181825"/>
+<line x1="0.5" y1="38" x2="541.5" y2="38" stroke="#313244"/>
+<circle cx="22" cy="19.0" r="6" fill="#ff5f56"/>
+<circle cx="42" cy="19.0" r="6" fill="#febc2e"/>
+<circle cx="62" cy="19.0" r="6" fill="#28c840"/>
+<text x="526" y="23.0" text-anchor="end" font-size="12" fill="#6c7086">04 · Emoji neon</text>
+<text xml:space="preserve" x="28.0" y="77" fill="#cdd6f4">📁 </text>
+<text xml:space="preserve" x="55.0" y="77" fill="#ffffff" font-weight="700">my-app</text>
+<text xml:space="preserve" x="109.0" y="77" fill="#cdd6f4">  </text>
+<text xml:space="preserve" x="127.0" y="77" fill="#ff00ff" font-weight="700">🤖 Opus 5</text>
+<text xml:space="preserve" x="208.0" y="77" fill="#cdd6f4">  </text>
+<text xml:space="preserve" x="226.0" y="77" fill="#cdd6f4">🧠 </text>
+<text xml:space="preserve" x="253.0" y="77" fill="#ff0000" font-weight="700">88%</text>
+<text xml:space="preserve" x="280.0" y="77" fill="#cdd6f4">  </text>
+<text xml:space="preserve" x="298.0" y="77" fill="#cdd6f4">⏳ </text>
+<text xml:space="preserve" x="325.0" y="77" fill="#ff0000" font-weight="700">91%</text>
+<text xml:space="preserve" x="352.0" y="77" fill="#cdd6f4">  </text>
+<text xml:space="preserve" x="370.0" y="77" fill="#cdd6f4">📅 </text>
+<text xml:space="preserve" x="397.0" y="77" fill="#ffaf00" font-weight="700">64%</text>
+<text xml:space="preserve" x="424.0" y="77" fill="#cdd6f4">  </text>
+<text xml:space="preserve" x="442.0" y="77" fill="#cdd6f4">💰</text>
+<text xml:space="preserve" x="460.0" y="77" fill="#87ff00" font-weight="700">$11.20</text>
+</svg>

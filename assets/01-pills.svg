@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="569" height="110" viewBox="0 0 569 110" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,monospace" font-size="15">
+<rect x="0.5" y="0.5" width="568" height="109" rx="10" fill="#1e1e2e" stroke="#313244"/>
+<path d="M0.5 38 V10.5 Q0.5 0.5 10.5 0.5 H558.5 Q568.5 0.5 568.5 10.5 V38 Z" fill="#181825"/>
+<line x1="0.5" y1="38" x2="568.5" y2="38" stroke="#313244"/>
+<circle cx="22" cy="19.0" r="6" fill="#ff5f56"/>
+<circle cx="42" cy="19.0" r="6" fill="#febc2e"/>
+<circle cx="62" cy="19.0" r="6" fill="#28c840"/>
+<text x="553" y="23.0" text-anchor="end" font-size="12" fill="#6c7086">01 · Pills</text>
+<rect x="28.0" y="58" width="99.0" height="28" rx="5" fill="#5f5f87"/>
+<text xml:space="preserve" x="28.0" y="77" fill="#ffffff" font-weight="700"> 📁 my-app </text>
+<text xml:space="preserve" x="127.0" y="77" fill="#cdd6f4"> </text>
+<rect x="136.0" y="58" width="72.0" height="28" rx="5" fill="#5f00af"/>
+<text xml:space="preserve" x="136.0" y="77" fill="#ffffff" font-weight="700"> Opus 5 </text>
+<text xml:space="preserve" x="208.0" y="77" fill="#cdd6f4"> </text>
+<rect x="217.0" y="58" width="81.0" height="28" rx="5" fill="#008787"/>
+<text xml:space="preserve" x="217.0" y="77" fill="#ffffff"> ctx 88% </text>
+<text xml:space="preserve" x="298.0" y="77" fill="#cdd6f4"> </text>
+<rect x="307.0" y="58" width="72.0" height="28" rx="5" fill="#af5f00"/>
+<text xml:space="preserve" x="307.0" y="77" fill="#ffffff"> 5h 91% </text>
+<text xml:space="preserve" x="379.0" y="77" fill="#cdd6f4"> </text>
+<rect x="388.0" y="58" width="72.0" height="28" rx="5" fill="#005f87"/>
+<text xml:space="preserve" x="388.0" y="77" fill="#ffffff"> 7d 64% </text>
+<text xml:space="preserve" x="460.0" y="77" fill="#cdd6f4"> </text>
+<rect x="469.0" y="58" width="72.0" height="28" rx="5" fill="#005f00"/>
+<text xml:space="preserve" x="469.0" y="77" fill="#ffffff"> $11.20 </text>
+</svg>
