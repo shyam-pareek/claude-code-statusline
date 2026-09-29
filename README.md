@@ -52,13 +52,21 @@ curl -fsSL https://raw.githubusercontent.com/shyam-pareek/claude-code-statusline
 
 ## Updating
 
-Themes are copied once at install time and do not auto-update. To get the latest version, re-run the installer with the same theme number:
+Themes are copied once at install time and do not auto-update. To get the latest version, run the updater:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/shyam-pareek/claude-code-statusline/main/install.sh | THEME=4 bash
+~/.claude/statusline/update.sh
 ```
 
-This overwrites the installed script (your `settings.json` is backed up first), so re-apply any `SHOW_PROJECT` / `SHOW_COST` tweaks afterward. Click **Watch > Custom > Releases** on this repo to be notified of new versions.
+It re-downloads your installed theme, keeps your `SHOW_PROJECT` / `SHOW_COST` settings, saves the previous copy as `statusline.sh.bak`, and does not touch `settings.json`. To switch theme while updating: `THEME=4 ~/.claude/statusline/update.sh`.
+
+Installed before the updater existed? Run it straight from GitHub (works for any earlier install):
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/shyam-pareek/claude-code-statusline/main/update.sh | bash
+```
+
+Click **Watch > Custom > Releases** on this repo to be notified of new versions.
 
 ## The seven themes
 

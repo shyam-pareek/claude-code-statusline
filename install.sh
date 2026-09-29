@@ -74,6 +74,18 @@ else
   fi
 fi
 chmod +x "$DEST"
+printf '%s\n' "$THEME" > "${INSTALL_DIR}/.theme"
+
+# ---- install the updater next to the theme ----
+UPD="${INSTALL_DIR}/update.sh"
+if [ -n "$SELFDIR" ] && [ -f "${SELFDIR}/update.sh" ]; then
+  cp "${SELFDIR}/update.sh" "$UPD"
+elif command -v curl >/dev/null 2>&1; then
+  curl -fsSL "${RAW}/update.sh" -o "$UPD" 2>/dev/null
+elif command -v wget >/dev/null 2>&1; then
+  wget -qO "$UPD" "${RAW}/update.sh" 2>/dev/null
+fi
+[ -f "$UPD" ] && chmod +x "$UPD"
 
 # ---- optional toggles ----
 if [ "${SHOW_PROJECT:-}" = "false" ]; then
@@ -108,4 +120,5 @@ fi
 say ""
 say "  Open a new Claude Code session (or restart) to see it."
 say "  Switch anytime:  re-run this installer and pick another number."
+say "  Update later:    ${INSTALL_DIR}/update.sh"
 say ""
