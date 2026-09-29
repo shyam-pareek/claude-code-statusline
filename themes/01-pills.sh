@@ -26,8 +26,9 @@ _rt(){
   case "$1" in ''|*[!0-9]*) return;; esac
   local f='%-I:%M%p'
   [ "$(_fmt "$1" %F)" = "$(date +%F)" ] || f="%a $f"
-  printf ' ⏳%s' "$(_fmt "$1" "$f" | tr 'AMP' 'amp')"
+  printf '⏳%s' "$(_fmt "$1" "$f" | tr 'AMP' 'amp')"
 }
+_sep(){ [ -n "$1" ] && printf ' %s›%s %s' "$2" "$3" "$1"; }
 T5=$(_rt "$(_j '.rate_limits.five_hour.resets_at // empty')")
 T7=$(_rt "$(_j '.rate_limits.seven_day.resets_at // empty')")
 COST=$(_j '.cost.total_cost_usd // 0'); COST=$(printf '%.2f' "${COST:-0}" 2>/dev/null); [ -z "$COST" ] && COST='0.00'
@@ -37,7 +38,7 @@ out=""
 [ "$SHOW_PROJECT" = true ] && out="${out}${ESC}[48;5;60m${W}${B} 📁 ${PROJECT} ${R} "
 out="${out}${ESC}[48;5;55m${W}${B} ${MODEL} ${R} "
 out="${out}${ESC}[48;5;30m${W} ctx ${CTX}% ${R} "
-out="${out}${ESC}[48;5;130m${W} 5h ${R5}%${T5} ${R} "
-out="${out}${ESC}[48;5;24m${W} 7d ${R7}%${T7} ${R}"
+out="${out}${ESC}[48;5;130m${W} 5h ${R5}%$(_sep "$T5" "${ESC}[38;5;230m" "$W") ${R} "
+out="${out}${ESC}[48;5;24m${W} 7d ${R7}%$(_sep "$T7" "${ESC}[38;5;117m" "$W") ${R}"
 [ "$SHOW_COST" = true ] && out="${out} ${ESC}[48;5;22m${W} \$${COST} ${R}"
 printf '%s\n' "$out"

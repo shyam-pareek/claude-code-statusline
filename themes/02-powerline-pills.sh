@@ -27,7 +27,7 @@ _rt(){
   case "$1" in ''|*[!0-9]*) return;; esac
   local f='%-I:%M%p'
   [ "$(_fmt "$1" %F)" = "$(date +%F)" ] || f="%a $f"
-  printf ' ⏳%s' "$(_fmt "$1" "$f" | tr 'AMP' 'amp')"
+  printf '⏳%s' "$(_fmt "$1" "$f" | tr 'AMP' 'amp')"
 }
 T5=$(_rt "$(_j '.rate_limits.five_hour.resets_at // empty')")
 T7=$(_rt "$(_j '.rate_limits.seven_day.resets_at // empty')")
@@ -35,7 +35,7 @@ COST=$(_j '.cost.total_cost_usd // 0'); COST=$(printf '%.2f' "${COST:-0}" 2>/dev
 ESC=$(printf '\033'); R="${ESC}[0m"; W="${ESC}[38;5;231m"; B="${ESC}[1m"
 SEP=$(printf '\356\202\260')   # U+E0B0 powerline right arrow
 
-# bgs: project=60 slate · model=55 purple · ctx=30 teal · 5h=130 orange · 7d=24 blue · cost=22 green
+# bgs: project=60 slate · model=55 purple · ctx=30 teal · 5h=130 orange (time 94) · 7d=24 blue (time 31) · cost=22 green
 out=""
 if [ "$SHOW_PROJECT" = true ]; then
   out="${out}${ESC}[48;5;60m${W}${B} 📁 ${PROJECT} ${ESC}[38;5;60m${ESC}[48;5;55m${SEP}"
@@ -44,12 +44,21 @@ else
 fi
 out="${out}${W}${B} ${MODEL} ${ESC}[38;5;55m${ESC}[48;5;30m${SEP}"
 out="${out}${W} ctx ${CTX}% ${ESC}[38;5;30m${ESC}[48;5;130m${SEP}"
-out="${out}${W} 5h ${R5}%${T5} ${ESC}[38;5;130m${ESC}[48;5;24m${SEP}"
-out="${out}${W} 7d ${R7}%${T7} "
-if [ "$SHOW_COST" = true ]; then
-  out="${out}${ESC}[38;5;24m${ESC}[48;5;22m${SEP}${W} \$${COST} ${ESC}[38;5;22m${ESC}[49m${SEP}"
+out="${out}${W} 5h ${R5}% "
+if [ -n "$T5" ]; then
+  out="${out}${ESC}[38;5;130m${ESC}[48;5;94m${SEP}${W} ${T5} ${ESC}[38;5;94m${ESC}[48;5;24m${SEP}"
 else
-  out="${out}${ESC}[38;5;24m${ESC}[49m${SEP}"
+  out="${out}${ESC}[38;5;130m${ESC}[48;5;24m${SEP}"
+fi
+out="${out}${W} 7d ${R7}% "
+LAST=24
+if [ -n "$T7" ]; then
+  out="${out}${ESC}[38;5;24m${ESC}[48;5;31m${SEP}${W} ${T7} "; LAST=31
+fi
+if [ "$SHOW_COST" = true ]; then
+  out="${out}${ESC}[38;5;${LAST}m${ESC}[48;5;22m${SEP}${W} \$${COST} ${ESC}[38;5;22m${ESC}[49m${SEP}"
+else
+  out="${out}${ESC}[38;5;${LAST}m${ESC}[49m${SEP}"
 fi
 out="${out}${R}"
 printf '%s\n' "$out"

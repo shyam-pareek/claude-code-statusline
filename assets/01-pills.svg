@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="767" height="110" viewBox="0 0 767 110" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,monospace" font-size="15">
-<rect x="0.5" y="0.5" width="766" height="109" rx="10" fill="#1e1e2e" stroke="#313244"/>
-<path d="M0.5 38 V10.5 Q0.5 0.5 10.5 0.5 H756.5 Q766.5 0.5 766.5 10.5 V38 Z" fill="#181825"/>
-<line x1="0.5" y1="38" x2="568.5" y2="38" stroke="#313244"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="803" height="110" viewBox="0 0 803 110" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,monospace" font-size="15">
+<rect x="0.5" y="0.5" width="802" height="109" rx="10" fill="#1e1e2e" stroke="#313244"/>
+<path d="M0.5 38 V10.5 Q0.5 0.5 10.5 0.5 H756.5 Q802.5 0.5 802.5 10.5 V38 Z" fill="#181825"/>
+<line x1="0.5" y1="38" x2="802.5" y2="38" stroke="#313244"/>
 <circle cx="22" cy="19.0" r="6" fill="#ff5f56"/>
 <circle cx="42" cy="19.0" r="6" fill="#febc2e"/>
 <circle cx="62" cy="19.0" r="6" fill="#28c840"/>
-<text x="751" y="23.0" text-anchor="end" font-size="12" fill="#6c7086">01 · Pills</text>
+<text x="787" y="23.0" text-anchor="end" font-size="12" fill="#6c7086">01 · Pills</text>
 <rect x="28.0" y="58" width="99.0" height="28" rx="5" fill="#5f5f87"/>
 <text xml:space="preserve" x="28.0" y="77" fill="#ffffff" font-weight="700"> 📁 my-app </text>
 <text xml:space="preserve" x="127.0" y="77" fill="#cdd6f4"> </text>
@@ -15,12 +15,12 @@
 <rect x="217.0" y="58" width="81.0" height="28" rx="5" fill="#008787"/>
 <text xml:space="preserve" x="217.0" y="77" fill="#ffffff"> ctx 88% </text>
 <text xml:space="preserve" x="298.0" y="77" fill="#cdd6f4"> </text>
-<rect x="307.0" y="58" width="153.0" height="28" rx="5" fill="#af5f00"/>
-<text xml:space="preserve" x="307.0" y="77" fill="#ffffff"> 5h 91% ⏳2:40pm </text>
-<text xml:space="preserve" x="460.0" y="77" fill="#cdd6f4"> </text>
-<rect x="469.0" y="58" width="189.0" height="28" rx="5" fill="#005f87"/>
-<text xml:space="preserve" x="469.0" y="77" fill="#ffffff"> 7d 64% ⏳Fri 9:00pm </text>
-<text xml:space="preserve" x="658.0" y="77" fill="#cdd6f4"> </text>
-<rect x="667.0" y="58" width="72.0" height="28" rx="5" fill="#005f00"/>
-<text xml:space="preserve" x="667.0" y="77" fill="#ffffff"> $11.20 </text>
+<rect x="307.0" y="58" width="171.0" height="28" rx="5" fill="#af5f00"/>
+<text xml:space="preserve" x="307.0" y="77" fill="#ffffff"> 5h 91% <tspan fill="#ffffd7">›</tspan> ⏳2:40pm </text>
+<text xml:space="preserve" x="478.0" y="77" fill="#cdd6f4"> </text>
+<rect x="487.0" y="58" width="207.0" height="28" rx="5" fill="#005f87"/>
+<text xml:space="preserve" x="487.0" y="77" fill="#ffffff"> 7d 64% <tspan fill="#87d7ff">›</tspan> ⏳Fri 9:00pm </text>
+<text xml:space="preserve" x="694.0" y="77" fill="#cdd6f4"> </text>
+<rect x="703.0" y="58" width="72.0" height="28" rx="5" fill="#005f00"/>
+<text xml:space="preserve" x="703.0" y="77" fill="#ffffff"> $11.20 </text>
 </svg>
