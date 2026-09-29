@@ -21,6 +21,16 @@ MODEL=$(_j '.model.display_name // "?"')
 CTX=$(_j '(.context_window.used_percentage // 0) | floor')
 R5=$(_j '(.rate_limits.five_hour.used_percentage // 0) | floor')
 R7=$(_j '(.rate_limits.seven_day.used_percentage // 0) | floor')
+# Rate-limit reset times (epoch secs -> local clock; day shown when not today). BSD + GNU date.
+_fmt(){ date -r "$1" "+$2" 2>/dev/null || date -d "@$1" "+$2" 2>/dev/null; }
+_rt(){
+  case "$1" in ''|*[!0-9]*) return;; esac
+  local f='%-I:%M%p'
+  [ "$(_fmt "$1" %F)" = "$(date +%F)" ] || f="%a $f"
+  printf ' ↻%s' "$(_fmt "$1" "$f" | tr 'AMP' 'amp')"
+}
+T5=$(_rt "$(_j '.rate_limits.five_hour.resets_at // empty')")
+T7=$(_rt "$(_j '.rate_limits.seven_day.resets_at // empty')")
 COST=$(_j '.cost.total_cost_usd // 0'); COST=$(printf '%.2f' "${COST:-0}" 2>/dev/null); [ -z "$COST" ] && COST='0.00'
 ESC=$(printf '\033'); R="${ESC}[0m"; B="${ESC}[1m"
 
@@ -28,7 +38,7 @@ S="  "
 out="${ESC}[38;5;199m${B}${MODEL}${R}"
 [ "$SHOW_PROJECT" = true ] && out="${ESC}[38;5;213m${B}📁 ${PROJECT}${R}${S}${out}"
 out="${out}${S}${ESC}[38;5;171mctx ${ESC}[38;5;170m${CTX}%${R}"
-out="${out}${S}${ESC}[38;5;141m5h ${ESC}[38;5;111m${R5}%${R}"
-out="${out}${S}${ESC}[38;5;81m7d ${ESC}[38;5;80m${R7}%${R}"
+out="${out}${S}${ESC}[38;5;141m5h ${ESC}[38;5;111m${R5}%${T5}${R}"
+out="${out}${S}${ESC}[38;5;81m7d ${ESC}[38;5;80m${R7}%${T7}${R}"
 [ "$SHOW_COST" = true ] && out="${out}${S}${ESC}[38;5;84m\$${COST}${R}"
 printf '%s\n' "$out"
