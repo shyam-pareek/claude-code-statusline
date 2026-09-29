@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="551" height="110" viewBox="0 0 551 110" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,monospace" font-size="15">
-<rect x="0.5" y="0.5" width="550" height="109" rx="10" fill="#1e1e2e" stroke="#313244"/>
-<path d="M0.5 38 V10.5 Q0.5 0.5 10.5 0.5 H540.5 Q550.5 0.5 550.5 10.5 V38 Z" fill="#181825"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="749" height="110" viewBox="0 0 749 110" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,monospace" font-size="15">
+<rect x="0.5" y="0.5" width="748" height="109" rx="10" fill="#1e1e2e" stroke="#313244"/>
+<path d="M0.5 38 V10.5 Q0.5 0.5 10.5 0.5 H738.5 Q748.5 0.5 748.5 10.5 V38 Z" fill="#181825"/>
 <line x1="0.5" y1="38" x2="550.5" y2="38" stroke="#313244"/>
 <circle cx="22" cy="19.0" r="6" fill="#ff5f56"/>
 <circle cx="42" cy="19.0" r="6" fill="#febc2e"/>
 <circle cx="62" cy="19.0" r="6" fill="#28c840"/>
-<text x="535" y="23.0" text-anchor="end" font-size="12" fill="#6c7086">05 · Neon separators</text>
+<text x="733" y="23.0" text-anchor="end" font-size="12" fill="#6c7086">05 · Neon separators</text>
 <text xml:space="preserve" x="28.0" y="77" fill="#ffffff" font-weight="700">📁 my-app</text>
 <text xml:space="preserve" x="109.0" y="77" fill="#585858"> ◇ </text>
 <text xml:space="preserve" x="136.0" y="77" fill="#ff5fff" font-weight="700">Opus 5</text>
@@ -15,9 +15,11 @@
 <text xml:space="preserve" x="280.0" y="77" fill="#585858"> ◇ </text>
 <text xml:space="preserve" x="307.0" y="77" fill="#ffd700">5h </text>
 <text xml:space="preserve" x="334.0" y="77" fill="#ff0000" font-weight="700">91%</text>
-<text xml:space="preserve" x="361.0" y="77" fill="#585858"> ◇ </text>
-<text xml:space="preserve" x="388.0" y="77" fill="#87d7ff">7d </text>
-<text xml:space="preserve" x="415.0" y="77" fill="#ffaf00" font-weight="700">64%</text>
+<text xml:space="preserve" x="361.0" y="77" fill="#ff0000" font-weight="700"> ⏳2:40pm</text>
 <text xml:space="preserve" x="442.0" y="77" fill="#585858"> ◇ </text>
-<text xml:space="preserve" x="469.0" y="77" fill="#5fff00" font-weight="700">$11.20</text>
+<text xml:space="preserve" x="469.0" y="77" fill="#87d7ff">7d </text>
+<text xml:space="preserve" x="496.0" y="77" fill="#ffaf00" font-weight="700">64%</text>
+<text xml:space="preserve" x="523.0" y="77" fill="#ffaf00" font-weight="700"> ⏳Fri 9:00pm</text>
+<text xml:space="preserve" x="640.0" y="77" fill="#585858"> ◇ </text>
+<text xml:space="preserve" x="667.0" y="77" fill="#5fff00" font-weight="700">$11.20</text>
 </svg>

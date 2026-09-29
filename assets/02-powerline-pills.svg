@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="602" height="110" viewBox="0 0 602 110" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,monospace" font-size="15">
-<rect x="0.5" y="0.5" width="601" height="109" rx="10" fill="#1e1e2e" stroke="#313244"/>
-<path d="M0.5 38 V10.5 Q0.5 0.5 10.5 0.5 H591.5 Q601.5 0.5 601.5 10.5 V38 Z" fill="#181825"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="110" viewBox="0 0 800 110" font-family="ui-monospace,'SF Mono','Cascadia Code','Fira Code',Menlo,Consolas,monospace" font-size="15">
+<rect x="0.5" y="0.5" width="799" height="109" rx="10" fill="#1e1e2e" stroke="#313244"/>
+<path d="M0.5 38 V10.5 Q0.5 0.5 10.5 0.5 H789.5 Q799.5 0.5 799.5 10.5 V38 Z" fill="#181825"/>
 <line x1="0.5" y1="38" x2="601.5" y2="38" stroke="#313244"/>
 <circle cx="22" cy="19.0" r="6" fill="#ff5f56"/>
 <circle cx="42" cy="19.0" r="6" fill="#febc2e"/>
 <circle cx="62" cy="19.0" r="6" fill="#28c840"/>
-<text x="586" y="23.0" text-anchor="end" font-size="12" fill="#6c7086">02 · Powerline pills</text>
+<text x="784" y="23.0" text-anchor="end" font-size="12" fill="#6c7086">02 · Powerline pills</text>
 <rect x="28.0" y="58" width="99.0" height="28" rx="0" fill="#5f5f87"/>
 <text xml:space="preserve" x="28.0" y="77" fill="#ffffff" font-weight="700"> 📁 my-app </text>
 <rect x="127.0" y="58" width="13" height="28" fill="#5f00af"/>
@@ -18,16 +18,16 @@
 <text xml:space="preserve" x="225.0" y="77" fill="#ffffff"> ctx 88% </text>
 <rect x="306.0" y="58" width="13" height="28" fill="#af5f00"/>
 <polygon points="306.0,58 319.0,72.0 306.0,86" fill="#008787"/>
-<rect x="319.0" y="58" width="72.0" height="28" rx="0" fill="#af5f00"/>
-<text xml:space="preserve" x="319.0" y="77" fill="#ffffff"> 5h 91% </text>
-<rect x="391.0" y="58" width="13" height="28" fill="#005f87"/>
-<polygon points="391.0,58 404.0,72.0 391.0,86" fill="#af5f00"/>
-<rect x="404.0" y="58" width="72.0" height="28" rx="0" fill="#005f87"/>
-<text xml:space="preserve" x="404.0" y="77" fill="#ffffff"> 7d 64% </text>
-<rect x="476.0" y="58" width="13" height="28" fill="#005f00"/>
-<polygon points="476.0,58 489.0,72.0 476.0,86" fill="#005f87"/>
-<rect x="489.0" y="58" width="72.0" height="28" rx="0" fill="#005f00"/>
-<text xml:space="preserve" x="489.0" y="77" fill="#ffffff"> $11.20 </text>
-<rect x="561.0" y="58" width="13" height="28" fill="#1e1e2e"/>
-<polygon points="561.0,58 574.0,72.0 561.0,86" fill="#005f00"/>
+<rect x="319.0" y="58" width="153.0" height="28" rx="0" fill="#af5f00"/>
+<text xml:space="preserve" x="319.0" y="77" fill="#ffffff"> 5h 91% ⏳2:40pm </text>
+<rect x="472.0" y="58" width="13" height="28" fill="#005f87"/>
+<polygon points="472.0,58 485.0,72.0 472.0,86" fill="#af5f00"/>
+<rect x="485.0" y="58" width="189.0" height="28" rx="0" fill="#005f87"/>
+<text xml:space="preserve" x="485.0" y="77" fill="#ffffff"> 7d 64% ⏳Fri 9:00pm </text>
+<rect x="674.0" y="58" width="13" height="28" fill="#005f00"/>
+<polygon points="674.0,58 687.0,72.0 674.0,86" fill="#005f87"/>
+<rect x="687.0" y="58" width="72.0" height="28" rx="0" fill="#005f00"/>
+<text xml:space="preserve" x="687.0" y="77" fill="#ffffff"> $11.20 </text>
+<rect x="759.0" y="58" width="13" height="28" fill="#1e1e2e"/>
+<polygon points="759.0,58 772.0,72.0 759.0,86" fill="#005f00"/>
 </svg>
