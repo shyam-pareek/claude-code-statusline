@@ -13,7 +13,7 @@
   <img src="https://img.shields.io/badge/themes-7-8957e5?style=flat-square" alt="7 themes">
 </p>
 
-<img src="assets/07-gradient-sweep.svg" alt="Gradient sweep status line preview" width="660">
+<img src="assets/07-gradient-sweep.svg?v=2" alt="Gradient sweep status line preview" width="660">
 
 </div>
 
@@ -67,37 +67,37 @@ Each preview uses a sample session. Install any one by number with `THEME=N`.
 ### 1 · Pills
 Solid rounded pills, one hue per metric. Clean and highly readable.
 
-<p align="center"><img src="assets/01-pills.svg" width="660" alt="Pills"></p>
+<p align="center"><img src="assets/01-pills.svg?v=2" width="660" alt="Pills"></p>
 
 ### 2 · Powerline pills
 Seamless arrow-joined segments. Needs a [Nerd Font](https://www.nerdfonts.com) for the arrow glyphs.
 
-<p align="center"><img src="assets/02-powerline-pills.svg" width="660" alt="Powerline pills"></p>
+<p align="center"><img src="assets/02-powerline-pills.svg?v=2" width="660" alt="Powerline pills"></p>
 
 ### 3 · Vivid labels
 A bright label per metric; the numbers shade green → amber → red as usage climbs.
 
-<p align="center"><img src="assets/03-vivid-labels.svg" width="660" alt="Vivid labels"></p>
+<p align="center"><img src="assets/03-vivid-labels.svg?v=2" width="660" alt="Vivid labels"></p>
 
 ### 4 · Emoji neon
 Emoji markers with bold, neon percentages.
 
-<p align="center"><img src="assets/04-emoji-neon.svg" width="660" alt="Emoji neon"></p>
+<p align="center"><img src="assets/04-emoji-neon.svg?v=2" width="660" alt="Emoji neon"></p>
 
 ### 5 · Neon separators
 Bright model, colored labels, dim diamond separators between fields.
 
-<p align="center"><img src="assets/05-neon-separators.svg" width="660" alt="Neon separators"></p>
+<p align="center"><img src="assets/05-neon-separators.svg?v=2" width="660" alt="Neon separators"></p>
 
 ### 6 · Two-tone pills
 Bright backgrounds with dark text. The loudest, highest-presence set.
 
-<p align="center"><img src="assets/06-two-tone-pills.svg" width="660" alt="Two-tone pills"></p>
+<p align="center"><img src="assets/06-two-tone-pills.svg?v=2" width="660" alt="Two-tone pills"></p>
 
 ### 7 · Gradient sweep
 Hue glides pink → purple → blue → green across the whole line.
 
-<p align="center"><img src="assets/07-gradient-sweep.svg" width="660" alt="Gradient sweep"></p>
+<p align="center"><img src="assets/07-gradient-sweep.svg?v=2" width="660" alt="Gradient sweep"></p>
 
 > Previews use a sample project. On your machine the fields reflect your real session.
 
