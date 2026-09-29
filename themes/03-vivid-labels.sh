@@ -27,7 +27,7 @@ _rt(){
   case "$1" in ''|*[!0-9]*) return;; esac
   local f='%-I:%M%p'
   [ "$(_fmt "$1" %F)" = "$(date +%F)" ] || f="%a $f"
-  printf ' ↻%s' "$(_fmt "$1" "$f" | tr 'AMP' 'amp')"
+  printf ' · %s' "$(_fmt "$1" "$f" | tr 'AMP' 'amp')"
 }
 T5=$(_rt "$(_j '.rate_limits.five_hour.resets_at // empty')")
 T7=$(_rt "$(_j '.rate_limits.seven_day.resets_at // empty')")

@@ -22,7 +22,7 @@
 Every theme renders one compact line with the six things worth watching while you work:
 
 ```
-📁 project · model · ctx% · 5h% ↻reset · 7d% ↻reset · $cost
+📁 project · model · ctx% · 5h% + reset time · 7d% + reset time · $cost
 ```
 
 | Field | Meaning |
@@ -30,8 +30,8 @@ Every theme renders one compact line with the six things worth watching while yo
 | `📁 project` | current working directory |
 | `model` | active model (for example, Opus 5) |
 | `ctx%` | context window used |
-| `5h%` | 5-hour rate-limit window used, plus `↻` the local time it resets (day added if not today) |
-| `7d%` | 7-day rate-limit window used, plus `↻` the day and time it resets |
+| `5h%` | 5-hour rate-limit window used, plus a `·` then the local time it resets (day added if not today) |
+| `7d%` | 7-day rate-limit window used, plus a `·` then the day and time it resets |
 | `$cost` | session cost so far |
 
 Values shade from green to amber to red as usage climbs, so the line tells you when to slow down at a glance.
