@@ -50,6 +50,16 @@ Prefer a specific theme with no prompt? Pass its number:
 curl -fsSL https://raw.githubusercontent.com/shyam-pareek/claude-code-statusline/main/install.sh | THEME=4 bash
 ```
 
+## Updating
+
+Themes are copied once at install time and do not auto-update. To get the latest version, re-run the installer with the same theme number:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/shyam-pareek/claude-code-statusline/main/install.sh | THEME=4 bash
+```
+
+This overwrites the installed script (your `settings.json` is backed up first), so re-apply any `SHOW_PROJECT` / `SHOW_COST` tweaks afterward. Click **Watch > Custom > Releases** on this repo to be notified of new versions.
+
 ## The seven themes
 
 Each preview uses a sample session. Install any one by number with `THEME=N`.
